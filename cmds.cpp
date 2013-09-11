@@ -26,7 +26,6 @@
 
 // System header files
 #include <iostream>
-#include <stdexcept>
 #include <string.h>
 #include <stdio.h>
 #include <omp.h>
@@ -46,6 +45,7 @@ int usage(void) {
     << "Key commands:\n\n"
     << " scan            scan homopolymers and miscrosatelites\n"
     << " dis             run distribution analysis\n"
+    << " com             compute variant sites and output\n"
     << "\n\n";
     return 1; 
 }
@@ -63,12 +63,15 @@ int main(int argc, char **argv) {
             // distribution analysis 
             HomoAndMicrosateDis(argc-1, argv+1);
             return 1;
+	} else if (strcmp(argv[1], "com") == 0) {
+	    HomoAndMicrosateCom(argc-1, argv+1);
+	    return 1;
         } else {
             std::cerr<<"ERROR: unrecognized command "<<argv[1]<<"\n";
             return 2;
-        };
-    } catch (const std::exception & e) {
-        std::cerr << e.what() << std::endl;
+        }
+    } catch (const char *e) {
+        std::cerr << e << std::endl;
         return 3;
     }
 

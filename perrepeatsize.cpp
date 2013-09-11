@@ -1,5 +1,6 @@
 /*
- * cmds.h for PolyScape
+ * PerRepeatSize.cpp for PolyScape
+
  * Copyright (c) 2013 Beifang Niu && Kai Ye WUGSC All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person
@@ -24,12 +25,33 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef _CMDS_H_
-#define _CMDS_H_
 
-int HomoAndMicrosateScan(int argc, char *argv[]);   
-int HomoAndMicrosateDis(int argc, char *argv[]);
-int HomoAndMicrosateCom(int argc, char *argv[]);
 
-#endif //_CMDS_H_
+//#include<vector>
+//#include<string>
+//#include<iostream>
+//#include<fstream>
+//#include "perrepeatsize.h"
+//#include "comput_output.h"
 
+/*
+
+	void PerSize::Add(const DistributionPerSample & one) {
+		if (TooManyDataPoints) return;
+		for (unsigned int index = 0; index < 100; index++) {
+			distribution[index] += one.NormalReadCount[index];
+			if (distribution[index] > BigNumber)
+				TooManyDataPoints = true;
+		}
+	}
+	unsigned int * PerSize::GetDistribution() {
+		return distribution;
+	}
+
+	void PerRepeatSize::Add(unsigned int NumberOfRepeats, const DistributionPerSample & one) {
+		AllSize[NumberOfRepeats].Add(one);
+	}
+	unsigned int * PerRepeatSize::GetDistribution(unsigned int NumberOfRepeats) {
+		return AllSize[RepeatSize].GetDistribution();
+	}
+*/
