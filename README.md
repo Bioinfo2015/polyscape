@@ -12,10 +12,9 @@ Key commands:
 
         scan            scan homopolymers and miscrosatelites
         dis             run distribution analysis
-
+        com             compute variant sites and output
 
 This tool was originally designed to do homopolymer and microsatellites analysis. 
-
 
 
 Install
