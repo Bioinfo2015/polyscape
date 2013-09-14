@@ -25,6 +25,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
+////////////////////
 
 #ifndef _SCAN_H_
 #define _SCAN_H_
